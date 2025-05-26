@@ -54,7 +54,7 @@ public class GmailAutomationTest {
 
             // CAMPO DESTINATARIO
             WebElement paraInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='agP aFw']")));
-            paraInput.sendKeys("pruebautomatizacionquipux@gmail.com");
+            paraInput.sendKeys("andres.gomez@moovia.co");
 
             // CAMPO ASUNTO
             WebElement asuntoInput = wait.until(ExpectedConditions.elementToBeClickable(By.name("subjectbox")));
