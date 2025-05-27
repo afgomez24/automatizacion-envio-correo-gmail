@@ -27,13 +27,13 @@ public class GmailAutomationTest {
 
             // Esperar y enviar email
             WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
-            emailInput.sendKeys("pruebaautomatizacion42@gmail.com");
+            emailInput.sendKeys("TU CORREO");
             driver.findElement(By.id("identifierNext")).click();
 
 
             // Esperar y enviar contraseña
             WebElement passwordInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
-            passwordInput.sendKeys("Colombia2025*");
+            passwordInput.sendKeys("TU CONTRASEÑA");
             System.out.println(passwordInput);
 
 
@@ -54,7 +54,7 @@ public class GmailAutomationTest {
 
             // CAMPO DESTINATARIO
             WebElement paraInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='agP aFw']")));
-            paraInput.sendKeys("andres.gomez@moovia.co");
+            paraInput.sendKeys("CORREO DESTINATARIO");
 
             // CAMPO ASUNTO
             WebElement asuntoInput = wait.until(ExpectedConditions.elementToBeClickable(By.name("subjectbox")));
